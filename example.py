@@ -40,7 +40,7 @@ for i in range(1, num_iter + 1):
         p.data += -lr * p.grad
 
     if i % show_iter_freq == 0:
-        print(f"Epoch: {i}/{num_iter+1}, Train loss: {loss.data:.4f}")  # type: ignore
+        print(f"Epoch: {i}/{num_iter}, Train loss: {loss.data:.4f}")  # type: ignore
 
 
 x = [Value(2.0), Value(3.0), Value(-1.0)]

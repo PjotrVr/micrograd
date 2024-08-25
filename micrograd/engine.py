@@ -116,11 +116,12 @@ class Value:
         visited = set()
 
         def build_dependancy_graph(v):
-            if v not in visited:
-                visited.add(v)
-                for child in v._prev:
-                    build_dependancy_graph(child)
-                graph.append(v)
+            if not v.requires_grad or v in visited:
+                return
+            visited.add(v)
+            for child in v._prev:
+                build_dependancy_graph(child)
+            graph.append(v)
 
         build_dependancy_graph(self)
 
