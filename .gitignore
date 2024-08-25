@@ -1,0 +1,6 @@
+**/venv
+todo.txt
+dev.ipynb
+**/__pycache__
+**/temp*.py
+**/.ipynb_checkpoints
