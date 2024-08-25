@@ -10,3 +10,4 @@ Added changes that I found interesting like activation functions being classes.
 - Train on some simple regression model
 - Add cross entropy loss
 - Train on MNIST
+- Implement this in Mojo 🔥
